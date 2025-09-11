@@ -36,7 +36,7 @@ print_r("\n concatenar </p>\n");
 
 $lista=array(1,2,3,4,5);
 
-for ($i=0;$i<$lista.length;$i++)
+for ($i=0;$i<count($lista);$i++)
  echo $lista[$i];
 
 $lista=array();
