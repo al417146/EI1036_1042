@@ -14,7 +14,7 @@
 $nombre = "Ana";
 
 print("<P>Hola, $nombre</P>");
-if (isset($argv[1])) {
+if (isset($argv[1])) { // Esto es si le pasas un parámetro al programa (solo uno)
     print("<p> Adios, $argv[1]</P>");
 }
 print "\nFIN";
