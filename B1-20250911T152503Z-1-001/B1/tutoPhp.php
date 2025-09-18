@@ -31,7 +31,7 @@ echo $a;
 echo "\nFIN\n</p>";
 }
   
-concatenar("  oo ");
+concatenar("ccion  oo ");
 print_r("\n concatenar </p>\n");
 
 $lista=array(1,2,3,4,5);
