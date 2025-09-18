@@ -1,3 +1,3 @@
 # EI1036_1042
 
-Add 
+Esto es la práctica 1 (dos sesiones de la asignatura EI1036/42) del grado en Ingeniería Informática.
