@@ -16,5 +16,8 @@
 		<li>
 			<a href="../B_0/holaMundo.php">HolaMundo</a>
 		</li>
+		<li>
+			<a href="?action=qui_som">Qui Som</a>
+		</li>
 	</ul>
 </nav>
