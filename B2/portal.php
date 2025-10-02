@@ -25,7 +25,11 @@
             $central = "/partials/form_register.php";
             break;
         case "qui_som":
-            $central = "/partials/qui_som";
+            $central = "/partials/qui_som.php";
+            break;
+        case "noticias":
+            $central = "/partials/noticias.php";
+            break;
         default:
             $central = "/partials/error.php";
     }

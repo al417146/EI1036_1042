@@ -19,5 +19,8 @@
 		<li>
 			<a href="?action=qui_som">Qui Som</a>
 		</li>
+		<li>
+			<a href="?action=noticias">Noticias</a>
+		</li>
 	</ul>
 </nav>
