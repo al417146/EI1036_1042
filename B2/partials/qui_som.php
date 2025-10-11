@@ -13,7 +13,7 @@
     <p>Envia un bizum de <span style="color:black;">500 € </span> con el concepto
         de <span style="color:black;">"consultoría" </span> y me pondré en contacto contigo
             para realizar la consultoría</p>
-        <p> Envía un bizum de 200 € con el concepto de mensaje y te responderé tan pronto comp pueda</p>
+        <p> Envía un bizum de 200 € con el concepto de "mensaje" y te responderé tan pronto como pueda</p>
 
     <h1>Horario:</h1>
     <p> Me encontrarás en Castellón, en el restro en la calle Lagasca</p>
