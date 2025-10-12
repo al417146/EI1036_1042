@@ -9,7 +9,7 @@
 	<!--
 	<link rel="icon" type="image/ico" href="./media/favicon.ico">
 -->
-	<link rel="icon" type="image/webp" href="./media/imagen.webp"
+	<link rel="icon" type="image/webp" href="./media/imagen.webp">
 
 </head>
 

@@ -118,3 +118,16 @@ section#blog {
 }
 header>img{width:15%}
 img{max-width: 50%;}
+
+.box {
+  border: 5px solid darkblue;
+  width: 20vw;
+  height: 20vh;
+  font-size: 10vh;
+}
+
+
+.contenedor-flex {
+  display: flex;
+  align-items: stretch; /* Para que los elementos hermanos tengan la misma altura */
+}
