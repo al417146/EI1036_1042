@@ -30,6 +30,9 @@
         case "noticias":
             $central = "/partials/noticias.php";
             break;
+        case "registrar":
+            $central = "/partials/registrar.php";
+            break;
         default:
             $central = "/partials/error.php";
     }

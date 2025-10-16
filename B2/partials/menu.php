@@ -3,7 +3,7 @@
 		<li>
 			<a href="?action=home">Home</a>
 		</li>
-		<li>
+		<li id="registro">
 			<a href="?action=form_register">Registro</a>
 		</li>
 		<li>

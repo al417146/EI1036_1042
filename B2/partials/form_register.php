@@ -1,6 +1,6 @@
 
 <main>
-	<h1>Gestión de Actividades </h1>
+	<h1>Sesión de consultoría </h1>
 	<form class="fom_usuario" action="?action=registrar" method="POST">
 		<legend>Datos básicos</legend>
 		<label for="nombre">Nombre</label>
