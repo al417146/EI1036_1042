@@ -17,5 +17,5 @@
 <body>
 	<header>
 		<img src="./media/ramas.jpeg" id="logo" alt="logo" />
-		<h1 id="eslogan"> Mi primer portal</h1>
+		<h1 id="eslogan"> Mi portal Web</h1>
 	</header>
