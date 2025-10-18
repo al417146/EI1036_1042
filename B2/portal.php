@@ -33,6 +33,12 @@
         case "registrar":
             $central = "/partials/registrar.php";
             break;
+        case "galeria":
+            $central = "/partials/galeria.php";
+            break;
+        case "tablas":
+            $central = "/partials/tablas.php";
+            break;
         default:
             $central = "/partials/error.php";
     }

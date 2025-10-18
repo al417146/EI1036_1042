@@ -2,7 +2,7 @@ body {
     font-family: arial;
     /*background-image: url('../img/fondo.png');*/ /*NO EXISTE!!!!*/ 
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto; 
     /* Centrado */
 }
 
@@ -148,10 +148,18 @@ img{
   font-size: 10vh;
 }
 
-
+/* Puesto por Lola  */ 
 .contenedor-flex {
   display: flex;
   align-items: stretch; /* Para que los elementos hermanos tengan la misma altura */
+}
+
+
+.contenedor-flex > img.imagen {
+    width: 50%;
+    height: auto;
+    margin-left: 0px;
+    float: left;
 }
 
 

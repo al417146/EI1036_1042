@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Pruebas </title>
 	<meta name="Author" content="AlumnoXXX">
-	<link rel="stylesheet" href="./css/estilo.css" type="text/css">
+	<link rel="stylesheet" href="../css/estilo.css" type="text/css">
 	<!--
 	<link rel="icon" type="image/ico" href="./media/favicon.ico">
 -->
@@ -16,6 +16,6 @@
 
 <body>
 	<header>
-		<img src="./media/ramas.jpeg" id="logo" alt="logo" />
+		<img src="../media/ramas.jpeg" id="logo" alt="logo" />
 		<h1 id="eslogan"> Mi portal Web</h1>
 	</header>

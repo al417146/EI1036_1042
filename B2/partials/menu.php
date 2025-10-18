@@ -22,5 +22,11 @@
 		<li>
 			<a href="?action=noticias">Noticias</a>
 		</li>
+		<li>
+			<a href="?action=galeria">Galería</a>
+		</li>
+		<li>
+			<a href="?action=tablas">Tablas</a>
+		</li>
 	</ul>
 </nav>
