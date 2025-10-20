@@ -13,7 +13,7 @@
         <img class = "imagen" src="../media/imagen1.png">
         
     </div>
-    <div class="contenedor-flex">
+    <div class="contenedor-flex"> 
         <img class = "imagen" src="../media/ramas.jpeg">
         <img class = "imagen" src="../media/imagen1.png">
         <img class = "imagen" src="../media/ramas.jpeg">
