@@ -171,3 +171,11 @@ main {
 elemento.cosa{
     display: flex;
 }
+
+.noticias {
+    /*display: flex; */ 
+    position: absolute;
+    padding: 100px 100px 100px 100px;
+    top: 125px;
+    margin-right: 100px;
+}

@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <a href="https://elpais.com/">El país</a>
+    <a id = "noticias" href="https://elpais.com/">El país</a>
 
 </body>    
 
