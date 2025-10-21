@@ -175,7 +175,8 @@ elemento.cosa{
 .noticias {
     /*display: flex; */ 
     position: absolute;
-    padding: 100px 100px 100px 100px;
+    /*padding: 100px 100px 100px 100px; */ 
     top: 125px;
+    right: 0px;
     margin-right: 100px;
 }

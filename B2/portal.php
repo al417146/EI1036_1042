@@ -27,9 +27,9 @@
         case "qui_som":
             $central = "/partials/qui_som.php";
             break;
-        case "noticias":
+        /*case "noticias":
             $central = "/partials/noticias.php";
-            break;
+            break;*/
         case "registrar":
             $central = "/partials/registrar.php";
             break;
@@ -46,6 +46,7 @@
     require_once(dirname(__FILE__)."/partials/header.php");
     require_once(dirname(__FILE__)."/partials/menu.php");
     require_once(dirname(__FILE__).$central);
-    echo "<br />",$action,"<br />",dirname(__FILE__),"<br />";
+    require_once(dirname(__FILE__)."/partials/noticias.php");
+    /* echo "<br />",$action,"<br />",dirname(__FILE__),"<br />"; */ 
     require_once(dirname(__FILE__)."/partials/footer.php");
 ?>

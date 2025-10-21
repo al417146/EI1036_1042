@@ -19,9 +19,9 @@
 		<li>
 			<a href="?action=qui_som">Qui Som</a>
 		</li>
-		<li>
+		<!--<li>
 			<a href="?action=noticias">Noticias</a>
-		</li>
+		</li> --> 
 		<li>
 			<a href="?action=galeria">Galería</a>
 		</li>

@@ -17,5 +17,5 @@
 <body>
 	<header>
 		<img src="../media/ramas.jpeg" id="logo" alt="logo" />
-		<h1 id="eslogan"> Mi portal Web</h1>
+		<h1 id="eslogan"> Portal web de Pau</h1>
 	</header>

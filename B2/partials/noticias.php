@@ -8,8 +8,7 @@
 </head>
 
 <body>
-    <a id = "noticias" href="https://elpais.com/">El país</a>
-
+    <a class = "noticias" href="https://elpais.com/">El país</a>
 </body>    
 
 </html>
