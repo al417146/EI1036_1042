@@ -10,8 +10,7 @@
 <body>
     <h1>Estas son las actividades disponibles</h1>
     <table>
-        <?php
-        ?>
+        
          <ul>
             <li>
                 <p>Uno</p>

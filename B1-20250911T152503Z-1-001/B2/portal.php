@@ -49,4 +49,5 @@
     require_once(dirname(__FILE__)."/partials/noticias.php");
     /* echo "<br />",$action,"<br />",dirname(__FILE__),"<br />"; */ 
     require_once(dirname(__FILE__)."/partials/footer.php");
+    print($_SERVER['HTTP_REFERER']);
 ?>
