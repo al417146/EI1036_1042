@@ -39,6 +39,9 @@
         case "tablas":
             $central = "/partials/tablas.php";
             break;
+        case "reg_acti":
+            $central = "/partials/reg_acti.php";
+            break;
         default:
             $central = "/partials/error.php";
     }

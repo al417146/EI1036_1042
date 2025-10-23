@@ -8,7 +8,11 @@
  </head>
 
  <body>
-    <form method="POST" 
+    <form method="POST" action="?action=reg_acti" class="reg_acti">
+     <input type="textarea" >
+
+
+    </form>
  </body>
 
 </html>
