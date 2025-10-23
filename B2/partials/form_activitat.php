@@ -8,10 +8,31 @@
  </head>
 
  <body>
+   <h1>Formulario de registro de una actividad</h1>
     <form method="POST" action="?action=reg_acti" class="reg_acti">
-     <input type="textarea" >
-
-
+     <legend>Datos básicos de la actividad que quieres registrar</legend>
+     <label for="nombre">Nombre de la actividad</label>
+     <br></br>
+     <input type="text" name="nombre" id="nombre">
+     <br/>
+     <label for="num_pers">Número de personas</label>
+     <br/>
+     <input type="text" name="num_pers" id="num_pers">
+     <br/>
+     <label for="querer">Registrar actividad</label>
+     <br/>
+     <input type="checkbox" name="querer" value="si">
+     <br/>
+     <label for="color">Color favorito</label>
+     <br/>
+     <select id="color" name="color">
+      <option value="red">Rojo</option>
+      <option value="blue">Azul</option>
+      <option value="green">Verde</option>
+     </select>
+     <br></br>
+     <input type="submit" value="Enviar datos">
+     
     </form>
  </body>
 

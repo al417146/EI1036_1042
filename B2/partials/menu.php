@@ -14,6 +14,9 @@
 			<a href="?action=modify">Modificar</a>
 		</li>
 		<li>
+			<a href="?action=registrar_actividad">Registrar actividad</a>
+		</li>
+		<li>
 			<a href="../B_0/holaMundo.php">HolaMundo</a>
 		</li>
 		<li>

@@ -42,6 +42,9 @@
         case "reg_acti":
             $central = "/partials/reg_acti.php";
             break;
+        case "registrar_actividad":
+            $central= "/partials/form_activitat.php";
+            break;
         default:
             $central = "/partials/error.php";
     }
