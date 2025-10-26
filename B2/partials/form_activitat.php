@@ -10,7 +10,9 @@
  <body>
    <h1>Formulario de registro de una actividad</h1>
     <form method="POST" action="?action=reg_acti" class="reg_acti">
+
      <legend>Datos básicos de la actividad que quieres registrar</legend>
+     <br/>
      <label for="nombre">Nombre de la actividad</label>
      <br></br>
      <input type="text" name="nombre" id="nombre">
@@ -37,3 +39,7 @@
  </body>
 
 </html>
+
+<?php
+/* session_start(); */ 
+?>
