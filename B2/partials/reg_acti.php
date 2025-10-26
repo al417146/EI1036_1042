@@ -42,7 +42,7 @@ function solve() {
     } else {
         /*setcookie("TestCookie","$nombre",time() + 3600); */
         echo "Cookie añadida con éxito";
-        print("Cookie añadida con éxito");
+        print ("Cookie añadida con éxito");
     }
 
 }

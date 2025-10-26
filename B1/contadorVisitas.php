@@ -1,6 +1,6 @@
 <?php
 $name = "contador.txt";
-$directory = "/tmp/php";
+$directory = "./datos";
 $fich = $directory . "/" . $name;
 if (!file_exists($fich)) {
    if (!file_exists($directory)) {
