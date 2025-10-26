@@ -1,3 +1,19 @@
+<!--
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <title>Mi titulo</title>
+        <meta charset="UTF-8">
+         <link rel="icon" type="image/webp" href="../media/imagen.webp"> 
+    </head>
+
+    <body>
+
+    </body>
+</html>
+
+-->
+
 <?php
 /* session_start(); */
 /* echo"Voy a procesar los datos";  */
@@ -41,8 +57,11 @@ function solve() {
         throw new Exception("No esta bien esto sabes");
     } else {
         /*setcookie("TestCookie","$nombre",time() + 3600); */
-        echo "Cookie añadida con éxito";
-        print ("Cookie añadida con éxito");
+        /*echo "Cookie añadida con éxito";
+        print ("Cookie añadida con éxito"); */
+        echo "Nombre: " . "$nombre" . "<br>";
+        echo "Número de personas: " . "$num_pers" . "<br>";
+        echo "Color favorito: " . "$color" . "<br>";
     }
 
 }

@@ -8,7 +8,7 @@
 
 <body>
 </body>
-<h1>Esto es mi Galería :)</h1>
+<h1 id = "galeria">Esto es mi Galería :)</h1>
     <div class="contenedor-flex">
         <img class = "imagen" src="../media/imagen1.png">
         

@@ -4,6 +4,7 @@ body {
     max-width: 1000px;
     margin: 0 auto; 
     /* Centrado */
+    background-color: aqua;
 }
 
 header {
@@ -152,8 +153,16 @@ img{
 .contenedor-flex {
   display: flex;
   align-items: stretch; /* Para que los elementos hermanos tengan la misma altura */
+  overflow: hidden;
 }
 
+.contenedor-flex:hover {
+    overflow: scroll;
+}
+
+h1#galeria{
+    text-align: center;
+}
 
 .contenedor-flex > img.imagen {
     width: 50%;
@@ -175,8 +184,22 @@ elemento.cosa{
 .noticias {
     /*display: flex; */ 
     position: absolute;
-    /*padding: 100px 100px 100px 100px; */ 
+    padding: 100px 100px 100px 100px;
     top: 125px;
     right: 0px;
-    margin-right: 100px;
+    margin: 100px;
 }
+
+.actividad {
+    overflow: hidden;
+    display: block;
+    padding: 10px 10px 10px 10px; 
+    border: 1px solid #000000;
+    margin: 4px;
+    /* float: left; */
+}
+/*
+.actividad > p {
+    display: block;
+}
+*/

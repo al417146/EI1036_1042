@@ -9,23 +9,35 @@
 
 <body>
     <h1>Estas son las actividades disponibles</h1>
-    <table>
-        
-         <ul>
-            <li>
-                <p>Uno</p>
-                <p>Dos</p>
-            </li>
-            <li>
-                <p>Dos</p>
-                <p>Tres</p>
-                <p>Cuatro</p>
-            </li>
-            <li>
-                <p>Cinco</p>
-            </li>
-        </ul>
-    </table>
+    <p class="actividad">Nombre
+        <scan>Número de personas</scan>
+        <scan>Color</scan>
+    </p>
+    <p class="actividad">Nombre
+        <scan>Número de personas</scan>
+        <scan>Color</scan>
+    </p>
+    <p class="actividad">Nombre
+        <scan>Número de personas</scan>
+        <scan>Color</scan>
+    </p>
+    <p class="actividad">Nombre
+        <scan>Número de personas</scan>
+        <scan>Color</scan>
+    </p>
+    <p class="actividad">Nombre
+        <scan>Número de personas</scan>
+        <scan>Color</scan>
+    </p>
+    <p class="actividad">Nombre
+        <scan>Número de personas</scan>
+        <scan>Color</scan>
+    </p>
+    <p class="actividad"><?php $_POST["nombre"] ?>
+        <scan><?php $_POST["num_pers"] ?></scan>
+        <scan><?php $_POST["color"]?></scan>
+    </p>
+
 </body>
 
 </html>
