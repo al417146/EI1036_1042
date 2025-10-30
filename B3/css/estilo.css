@@ -203,3 +203,12 @@ elemento.cosa{
     display: block;
 }
 */
+
+div#error { 
+    text-align: center;
+
+}
+
+div#error > h1 { 
+    color: red;
+}

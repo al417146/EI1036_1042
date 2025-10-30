@@ -33,10 +33,12 @@
         <scan>Número de personas</scan>
         <scan>Color</scan>
     </p>
+    <!-- 
     <p class="actividad"><?php $_POST["nombre"] ?>
         <scan><?php $_POST["num_pers"] ?></scan>
         <scan><?php $_POST["color"]?></scan>
     </p>
+    --> 
 
 </body>
 

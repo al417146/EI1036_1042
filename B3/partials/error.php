@@ -1,4 +1,7 @@
-<main>
-	<h1>Algo no ha ido bien</h1>
-	<p>Vuelve a intentarlo con otra opción </p>
-</main>
+<div id = "error">
+	<h1>Existe un error en el programa</h1>
+	<?php 
+		echo $_SERVER['QUERY_STRING'] . " no es válido" . "<br>";
+		echo $error_msg;
+	?>
+</div>

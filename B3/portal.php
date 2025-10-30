@@ -11,12 +11,17 @@
  * * Si la URL tiene este esquema http://xxxx/portal0?action=fregistro
  * * mostrara el formulario de registro. Si no hay nada la página principal.
  **/
-
-
+    
+    
+    ini_set('display_errors', 1);
+    /*echo $a; */
 
     $action = (array_key_exists('action', $_REQUEST)) ? $_REQUEST["action"] : "home";
 
 
+    if ($_SERVER['SERVER_NAME'] != "localhost") { 
+        
+    }
     switch ($action) {
         case "home":
             $central = "/partials/home.php";
@@ -46,14 +51,20 @@
             $central= "/partials/form_activitat.php";
             break;
         default:
-            $central = "/partials/error.php";
+            $error_msg = "Acción no permitida";
+            $central= "/partials/home.php";
     }
+
 
     require_once(dirname(__FILE__)."/partials/header.php");
     require_once(dirname(__FILE__)."/partials/menu.php");
+    if (isset($error_msg)) require_once(dirname(__FILE__)."/partials/error.php");
     require_once(dirname(__FILE__).$central);
     require_once(dirname(__FILE__)."/partials/noticias.php");
     /* echo "<br />",$action,"<br />",dirname(__FILE__),"<br />"; */ 
     require_once(dirname(__FILE__)."/partials/footer.php");
-    print($_SERVER['HTTP_REFERER']);
+    /*print($_SERVER['HTTP_REFERER']); */
+    /* echo $error_msg; */ 
+    /* echo $_SERVER['HTTP_REFERER'];
+    echo $_SERVER['SERVER_NAME']; */ 
 ?>
