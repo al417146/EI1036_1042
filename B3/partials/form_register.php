@@ -1,0 +1,23 @@
+
+<main>
+	<h1>Sesión de consultoría </h1>
+	<form class="fom_usuario" action="?action=registrar" method="POST">
+		<legend>Datos básicos</legend>
+		<label for="nombre">Nombre</label>
+		<br/>
+		<input type="text" name="nombre" id = "nom" required class="item_requerid" size="20" maxlength="25" placeholder="NOMBRE"
+		 placeholder="Actividad1" />
+		<br/>
+		<label for="correo">Identificador</label>
+		<br/>
+		<input type="text" name="correo" id = "idi" class="item_requerid" size="8" maxlength="8" pattern="\d{7}[A-Z,Ñ]" placeholder="0000000BB" />
+		<br/>
+		<br/>
+		<label for="aceptar">Aceptar términos de registro</label>
+		<input type="checkbox" name="aceptar" id = "aceptar" value="si">
+		<br/>
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Deshacer">
+	</form>
+	
+</main>

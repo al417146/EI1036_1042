@@ -1,0 +1,205 @@
+body {
+    font-family: arial;
+    /*background-image: url('../img/fondo.png');*/ /*NO EXISTE!!!!*/ 
+    max-width: 1000px;
+    margin: 0 auto; 
+    /* Centrado */
+    background-color: aqua;
+}
+
+header {
+    min-height: 100px;
+    margin-bottom: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+
+nav {
+    clear: both;
+    margin-bottom: 10px;
+    padding: 4px;
+    text-align: center;
+    background-color: red;
+    font-size: 80%;
+}
+
+footer {
+    clear: both;
+    margin-bottom: 10px;
+    padding: 4px;
+    text-align: center;
+    background-color:gray;
+    font-size: 80%;
+}
+
+section {
+    width: 45%;
+    min-width: 300px;
+    margin: 0px 0px 15px 0px;
+    padding: 15px 5px 5px 5px;
+    background-color: beige;
+    box-shadow: 3px 3px 3px 3px rgba(50, 50, 50, .75);
+}
+
+h1 {
+    font-size: 120%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+h2 {
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+#logo {
+    float: left;
+    min-width: 80px;
+}
+
+
+/* Esta así en el header*/
+#eslogan {
+    float: left;
+    margin: 5% 5%;
+    color: #914bb9;
+}
+ 
+/*Esto hacía que desapareciera el Resgistro" 
+/*#registro {
+    position: absolute;
+    top: 5px;
+    right: 10%;
+}*/
+
+table { background-color:#FFFFE0;
+    border-collapse:collapse;
+    color:#000;
+    font-size:18px;
+    border:1px;
+    margin: 10px auto; }
+
+th { background-color:#BDB76B; }
+
+td, th { border: 1px solid;padding:1px;width: 10%; }
+
+td { border-bottom:1px dotted #BDB76B; }
+
+
+#registro a:hover {
+    color: blue;
+}
+
+nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #aaaaaa;
+}
+
+nav li {
+    display: inline;
+    padding: 0 40px 0 0;
+}
+
+section#blog {
+    float: right;
+}
+
+.valoracion-usuario {
+    font-style: italic;
+}
+
+.botonleermas {
+    font-size: 80%;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.izq {
+    float: left;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.der {
+    margin-top: 0px;
+    text-align: right;
+}
+
+header>img{
+    width:15%
+}
+
+img{
+    max-width: 50%;
+}
+
+.box {
+  border: 5px solid darkblue;
+  width: 20vw;
+  height: 20vh;
+  font-size: 10vh;
+}
+
+/* Puesto por Lola  */ 
+.contenedor-flex {
+  display: flex;
+  align-items: stretch; /* Para que los elementos hermanos tengan la misma altura */
+  overflow: hidden;
+}
+
+.contenedor-flex:hover {
+    overflow: scroll;
+}
+
+h1#galeria{
+    text-align: center;
+}
+
+.contenedor-flex > img.imagen {
+    width: 50%;
+    height: auto;
+    margin-left: 0px;
+    float: left;
+}
+
+
+main {
+    align-content: center;
+    margin: 0 auto;
+}
+
+elemento.cosa{
+    display: flex;
+}
+
+.noticias {
+    /*display: flex; */ 
+    position: absolute;
+    padding: 100px 100px 100px 100px;
+    top: 125px;
+    right: 0px;
+    margin: 100px;
+}
+
+.actividad {
+    overflow: hidden;
+    display: block;
+    padding: 10px 10px 10px 10px; 
+    border: 1px solid #000000;
+    margin: 4px;
+    /* float: left; */
+}
+/*
+.actividad > p {
+    display: block;
+}
+*/
