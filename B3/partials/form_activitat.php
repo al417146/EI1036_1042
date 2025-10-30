@@ -9,7 +9,7 @@
 
  <body>
    <h1>Formulario de registro de una actividad</h1>
-    <form method="POST" action="?action=tablas" class="reg_acti">
+    <form method="POST" action="?action=reg_acti" class="reg_acti">
 
      <legend>Datos básicos de la actividad que quieres registrar</legend>
      <br/>

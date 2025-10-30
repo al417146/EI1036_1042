@@ -1,75 +1,40 @@
-<!--
-<!DOCTYPE html>
-<html lang = "es">
-    <head>
-        <title>Mi titulo</title>
-        <meta charset="UTF-8">
-         <link rel="icon" type="image/webp" href="../media/imagen.webp"> 
-    </head>
+<?php 
 
-    <body>
-
-    </body>
-</html>
-
--->
-
-<?php
-/* session_start(); */
-/* echo"Voy a procesar los datos";  */
-/* 
-print_r($_SERVER["_SERVER_PORT"]);
-print_r($_REQUEST);
-print_r($_SERVER);
-
-print_r($_GLOBALS["QUERY_STRING"][]);
-*/ 
-
-function solve() {
-    /* var_dump($_REQUEST); */ 
-   /* session_start(); */
-   /*  print("<p>Sesion: " . session_name() . "</p>"); */ 
-
-    /* var_dump($_SESSION); */
-    $count = 0;
-    $nombre = null;
-    $num_pers = null;
-    $querer = null;
-    $color = null;
-    if (isset($_POST["nombre"])) { 
-        $nombre = $_POST["nombre"];
-        $count = $count + 1;
+function guardar_dades($diccionario) {
+    $name = "activitats.json";
+    $directory = "./recursos";
+    $fich = $directory . "/" . $name;
+    if (!file_exists($fich)) {
+        if (!file_exists($directory)) {
+        mkdir($directory, 0700);
+        }
     }
-    if (isset($_POST["num_pers"])) { 
-        $num_pers = $_POST["num_pers"];
-        $count = $count + 1;
-    }
-    if (isset($_POST["querer"])) {
-        $querer = $_POST["querer"];
-        $count = $count + 1;
-    }
-    if (isset($_POST["color"])) { 
-        $color = $_POST["color"];
-        $count = $count + 1;
-    }
+    $jsonData = json_encode($diccionario,JSON_PRETTY_PRINT);
+    $f = fopen($fich,"w");
+    fputs($f, $jsonData);
 
-    if ($count != 4 ) { 
-        throw new Exception("No esta bien esto sabes");
+}
+
+if (!isset($dict)) {
+    $dict = array();
+}
+
+if (isset($_POST["nombre"])) { 
+    if (!isset($dict[$_POST["nombre"]])) {
+        $v = array();
+        $v[] = $_POST["num_pers"];
+        $v[] = $_POST["querer"];
+        $v[] = $_POST["color"];
+        $dict[$_POST["nombre"]] = $v;
     } else {
-        /*setcookie("TestCookie","$nombre",time() + 3600); */
-        /*echo "Cookie añadida con éxito";
-        print ("Cookie añadida con éxito"); */
-        echo "Nombre: " . "$nombre" . "<br>";
-        echo "Número de personas: " . "$num_pers" . "<br>";
-        echo "Color favorito: " . "$color" . "<br>";
+        echo "La actividad ya existe";
+        $action = "registrar_actividad";
     }
-
+} else {
+    echo "No has puesto nombre de la actividad";
+    $action = "registrar_actividad";
 }
 
-try {
-    solve();
-} catch(Exception $ex) {
-    echo "Me ha salido el error de: " , $ex->getMessage();
-}
+
 
 ?>

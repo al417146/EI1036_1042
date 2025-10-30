@@ -14,14 +14,25 @@
     
     
     ini_set('display_errors', 1);
-    /*echo $a; */
+    
 
     $action = (array_key_exists('action', $_REQUEST)) ? $_REQUEST["action"] : "home";
 
-
-    if ($_SERVER['SERVER_NAME'] != "localhost") { 
-        
+    $entra = true;
+    if ($action!="home") { 
+        if (isset($_SERVER['HTTP_REFERER'])) {
+            if (!str_contains($_SERVER['HTTP_REFERER'],$_SERVER['SERVER_NAME'] . ":" . $_SERVER['SERVER_PORT'] . $_SERVER['SCRIPT_NAME'])) {
+                $error_msg = "Acceso directo no permitido";
+                $central = "/partials/home.php";
+                $entra = false;
+            }
+        } else {
+            $error_msg = "Acceso directo no permitido";
+            $central = "/partials/home.php";
+            $entra = false;
+        }
     }
+    if ($entra) {
     switch ($action) {
         case "home":
             $central = "/partials/home.php";
@@ -53,6 +64,7 @@
         default:
             $error_msg = "Acción no permitida";
             $central= "/partials/home.php";
+        }
     }
 
 
@@ -63,8 +75,7 @@
     require_once(dirname(__FILE__)."/partials/noticias.php");
     /* echo "<br />",$action,"<br />",dirname(__FILE__),"<br />"; */ 
     require_once(dirname(__FILE__)."/partials/footer.php");
-    /*print($_SERVER['HTTP_REFERER']); */
-    /* echo $error_msg; */ 
-    /* echo $_SERVER['HTTP_REFERER'];
-    echo $_SERVER['SERVER_NAME']; */ 
+    /*echo $_SERVER['HTTP_REFERER'] . "<br>";
+    echo $_SERVER['SERVER_NAME'] . ":" . $_SERVER['SERVER_PORT'] . $_SERVER['SCRIPT_NAME']; */
+
 ?>
