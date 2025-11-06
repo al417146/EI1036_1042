@@ -35,6 +35,8 @@ if (isset($_POST["nombre"])) {
     $action = "registrar_actividad";
 }
 
+guardar_dades($dict);
+
 
 
 ?>
