@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ca-ES">
+
+<head>
+  <title>canvasGame</title>
+  <script>
+    function initRec(cuadro) {
+      const canvas = document.getElementById(cuadro);
+      if (canvas.getContext) {
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "pink";
+        ctx.fillRect(0,0, 300,300);
+
+      }
+    }
+    function drawFace() {
+      const canvas = document.getElementById("canvas2");
+      if (canvas.getContext) {
+        const ctx = canvas.getContext("2d");
+        ctx.save();// guardo estado inicial pincel
+        ctx.beginPath();
+        ctx.arc(75, 75, 50, 0, Math.PI * 2, true); // CÃ­rculo externo
+        ctx.strokeStyle = "green";
+        ctx.moveTo(110, 75);
+        ctx.arc(75, 75, 35, 0, Math.PI, false); // Boca (en el sentido de las agujas del reloj)
+        ctx.moveTo(65, 65);
+        ctx.arc(60, 65, 5, 0, Math.PI * 2, true); // Ojo izquierdo
+        ctx.moveTo(95, 65);
+        ctx.arc(90, 65, 5, 0, Math.PI * 2, true); // Ojo derecho
+        //ctx.stroke(); //dibuja lo que hemos programado
+        ctx.restore();// recupero  los valores del pincel del save
+        ctx.stroke();
+        ctx.fillStyle = "rgb(200,200,100)";
+        ctx.fillRect(100, 100, 40, 24); // Shadow
+        ctx.translate(200, 200);
+        ctx.fillStyle = "green";
+        ctx.fillRect(0,0, 20, 14); // Shadow
+
+      }
+    }
+    
+
+    
+    try { initRec("canvas2"); }
+    catch (e) { console.log("\nError:" + e) }
+    document.addEventListener("DOMContentLoaded", (event) => { //Carga el DOM por completo
+      console.error("DOM fully loaded and parsed");
+      console.log(event);
+      drawFace();
+      initRec("canvas3");
+    });
+  </script>
+</head>
+
+<body>
+  <h1>cuadro 1 falla</h1>
+  <canvas id="canvas1" width="300" height="300"></canvas>
+  <h1>Muestra Cara</h1>
+  <canvas id="canvas2" width="300" height="300"></canvas>
+  <h1>cuadro 2 Va</h1>
+  <canvas id="canvas3" width="300" height="300"></canvas>
+</body>
+</html>
