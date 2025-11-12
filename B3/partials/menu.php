@@ -7,6 +7,9 @@
 			<a href="?action=form_register">Registro</a>
 		</li>
 		<li>
+			<a href="?action=form_foto">Registro de foto</a>
+		</li>
+		<li>
 			<a href="?action=list">Listar</a>
 		</li>
 

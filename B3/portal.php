@@ -61,6 +61,21 @@
         case "registrar_actividad":
             $central= "/partials/form_activitat.php";
             break;
+        case "form_foto":
+            $central = "/partials/form_foto.php";
+            break;
+        case "foto_upload":
+            /*if($central === "/partials/form_foto.php") {*/
+                var_dump($_FILES);
+                $directory = "./media/fotos";
+                if (!file_exists($directory)) {
+                    mkdir($directory, 0770); /*Los permisos son así? */
+                }
+                $fich = $directory . "/";
+                move_uploaded_file($_FILES["foto_cliente"]['tmp_name'],$directory);    
+            /*}*/
+            $central = "/partials/home.php";
+            break;
         default:
             $error_msg = "Acción no permitida";
             $central= "/partials/home.php";
