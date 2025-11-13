@@ -71,8 +71,8 @@
                 if (!file_exists($directory)) {
                     mkdir($directory, 0770); /*Los permisos son así? */
                 }
-                $fich = $directory . "/";
-                move_uploaded_file($_FILES["foto_cliente"]['tmp_name'],$directory);    
+                $fich = $directory . "/" . $_FILES["foto_cliente"]['name'];
+                move_uploaded_file($_FILES["foto_cliente"]['tmp_name'],$fich);    
             /*}*/
             $central = "/partials/home.php";
             break;
